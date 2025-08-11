@@ -1,6 +1,6 @@
 name: "NanoKVM Dashboard"
 description: "Dashboard for NanoKVM servers with previews and easy switching"
-version: "1.0.24"
+version: "1.0.25"
 slug: "nanokvm-dashboard"
 url: "https://github.com/Virtuplex/home-assistant/nanokvm-dashboard-addon"
 arch:
