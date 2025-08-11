@@ -27,4 +27,4 @@ schema:
       url: str
   config_file: str?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
-image: "creg.ext.virtuplex.net/Virtuplex/nanokvm-dashboard"
+image: "creg.ext.virtuplex.net/virtuplex/nanokvm-dashboard"
