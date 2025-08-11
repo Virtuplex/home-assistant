@@ -1,0 +1,30 @@
+name: "NanoKVM Dashboard"
+description: "Dashboard for NanoKVM servers with previews and easy switching"
+version: "1.0.24"
+slug: "nanokvm-dashboard"
+url: "https://github.com/Virtuplex/home-assistant/nanokvm-dashboard-addon"
+arch:
+  - aarch64
+ports:
+  "37289/tcp": 37289
+webui: "http://[HOST]:[PORT:37289]"
+startup: application
+boot: auto
+init: false
+options:
+  auth_secret: "change-this-to-secure-random-string-of-at-least-32-characters"
+  servers:
+    - name: "NANO KVM 01"
+      url: "http://NANO_KVM_HOSTNAME_01/"
+    - name: "NANO KVM 02"
+      url: "http://NANO_KVM_HOSTNAME_02/"
+  config_file: ""
+  log_level: "info"
+schema:
+  auth_secret: str
+  servers:
+    - name: str
+      url: str
+  config_file: str?
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+image: "creg.ext.virtuplex.net/Virtuplex/nanokvm-dashboard"
